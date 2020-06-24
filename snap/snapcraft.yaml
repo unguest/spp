@@ -11,5 +11,5 @@ confinement: strict # use 'strict' once you have the right plugs and slots
 
 parts:
   spp-parts:
-    plugin: nil
+    plugin: python
     source: https://github.com/unguest/spp.git
