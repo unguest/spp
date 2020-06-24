@@ -1,0 +1,15 @@
+name: simple-password-generator # you probably want to 'snapcraft register <name>'
+base: core18 # the base snap is the execution environment for this snap
+version: '0.1' # just for humans, typically '1.2+git' or '1.3.2'
+summary: Generate secure passwords in no time
+description: |
+  This is just a dumb (but useful) project that permits you to generate passwords
+  from your terminal considering 2 arguments : size & the char-set wideness.
+
+grade: stable # must be 'stable' to release into candidate/stable channels
+confinement: strict # use 'strict' once you have the right plugs and slots
+
+parts:
+  spp-parts:
+    plugin: nil
+    source: https://github.com/unguest/spp.git
