@@ -1,9 +1,7 @@
-# spp (Simple Python Password)
-A simple Python3-based password generator
+# spp-tools (Simple Python Password Tools)
+A simple Python3-based tools list.
 
-Also called simple-password-generator on snap.
-
-## Notes about verbosity
+## Notes about verbosity in spg
 When you put the verbosity to 1 (adding '-v 1' to the command line), you have 2 maps printed :
 	
 	- The first one is the shuffled char set
