@@ -39,6 +39,7 @@ if __name__ == "__main__":
     parser.add_argument("--size", "-s", type=int, help="Set the password size")
     parser.add_argument("--force", "-f", type=int, help="1 for letters, 2 for letters & numbers, 3 for every "
                                                         "printable char")
+    parser.add_argument("--count", "-c", type=int, help="Set the number of password to be generated (one per line)")
     args = parser.parse_args()  # Parses args given
 
     if not (args.size and args.force):
@@ -47,5 +48,12 @@ if __name__ == "__main__":
     else:
         if args.verbose:
             print(f"Size : {args.size}, Force : {args.force}")
-        password = generate(args.size, args.force, args.verbose)
-        print(password)
+        if args.count:
+            count = args.count
+        else:
+            count = 1
+        i = 0
+        while i < count:
+            password = generate(args.size, args.force, args.verbose)
+            print(password)
+            i += 1
