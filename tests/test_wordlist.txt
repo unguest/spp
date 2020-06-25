@@ -1,0 +1,5 @@
+linux
+torvalds
+berners-lee
+ritchie
+newton

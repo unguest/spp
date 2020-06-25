@@ -10,7 +10,7 @@ def generate(size, force, verbose=None):
     if force == 1 or force < 1:
         charset = str(string.ascii_lowercase) + str(string.ascii_uppercase)
     elif force == 2:
-        charset = str(string.ascii_lowercase) + str(string.ascii_uppercase) + "0123456789"
+        charset = str(string.ascii_lowercase) + str(string.ascii_uppercase) + string.digits
     elif force == 3 or force > 3:
         charset = str(string.ascii_lowercase) + str(
             string.ascii_uppercase) + "0123456789" + """!"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"""
